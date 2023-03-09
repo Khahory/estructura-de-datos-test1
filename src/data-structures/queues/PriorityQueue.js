@@ -31,8 +31,8 @@ export default function PriorityQueue() {
     for (let i = 0; i < items.length; i++) {
       // si el elemento que quiero insertar es menor a la prioridad que ya existe
       if (queueElement.priority < items[i].priority) {
-        // insertamos el elemento en la posicion i
         /*
+        insertamos el elemento en la posicion i
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         fruits.splice(2, 0, "Lemon", "Kiwi");
         fruits => ["Banana", "Orange", "Lemon", "Kiwi", "Apple", "Mango"]
@@ -41,11 +41,11 @@ export default function PriorityQueue() {
         added = true;
         break;
       }
+    }
 
-      // si no se agrego, lo agregamos al final
-      if (!added) {
-        items.push(queueElement);
-      }
+    // si no se agrego, lo agregamos al final
+    if (!added) {
+      items.push(queueElement);
     }
   }
 
@@ -87,7 +87,7 @@ export default function PriorityQueue() {
       }
 
       // concatenamos el elemento y el pipe
-      printString += `${items[i].element} - ${items[i].priority}${pipe}`;
+      printString += `${items[i].element}-${items[i].priority}${pipe}`;
     }
     return printString;
   }
