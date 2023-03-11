@@ -1,5 +1,5 @@
 import '../../globalTest';
-import LinkedList from '../../../src/data-structures/linked-Lists/LinkedList';
+import LinkedList from '../../../src/data-structures/linked-lists/LinkedList';
 
 const List = new LinkedList();
 
